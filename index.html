@@ -1,339 +1,742 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Medicell</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-  <style type="text/css">
-	.jumbotron{
-		background-color:rgb(66,134,244);   /*blue*/
-		color:#ffffff;
-		padding: 100px 25px;
 
-	}
-	.container-fluid{
-		padding:60px 50px;
-	}
-	.logo {
-		color: rgb(66,134,244);
-    		height: 100%;
-	}
-	@media screen and (max-width: 768px) {
-   	  .col-sm-4 {
-      	  text-align: center;
-      	  margin: 25px 0;
-  	  }
-	}
-	.thumbnail {
-	    padding: 0 0 15px 0;
-	    border: none;
-	    border-radius: 0;
-	}
 
-	.thumbnail img {
-	     width: 100%;
-	     height: 100%;
-	    margin-bottom: 10px;
-	}
-	.panel {
-	    border: 1px solid #f4511e; 
-	    border-radius:0;
-	    transition: box-shadow 0.5s;
-	}
+<!DOCTYPE html> 
 
-	.panel:hover {
-	    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-	}
-	.navbar {
-	    margin-bottom: 0;
-	    background-color: color: rgb(66,134,244);
-	    z-index: 9999;
-	    border: 0;
-	    font-size: 12px !important;
- 	    line-height: 1.42857143 !important;
-	    letter-spacing: 4px;
-	    border-radius: 0;
-	}
+<html lang="en"> 
 
-	.navbar li a, .navbar .navbar-brand {
-	    color: #fff !important;
-	}
+<head>  
+<title>Medicell</title> 
 
-	.navbar-nav li a:hover, .navbar-nav li.active a {
-	    color: rgb(66,134,244) !important;
-	    background-color: #fff !important;
-	}
+<meta charset="utf-8"> 
 
-	.navbar-default .navbar-toggle {
-	    border-color: transparent;
-	    color: #fff !important;
-	}
-    .slideanim {visibility:hidden;}
-	.slide {
-    /* The name of the animation */
-    animation-name: slide;
-    -webkit-animation-name: slide; 
-    /* The duration of the animation */
-    animation-duration: 1s; 
-    -webkit-animation-duration: 1s;
-    /* Make the element visible */
-    visibility: visible; 
-	}
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
-	@keyframes slide {
-    0% {
-        opacity: 0;
-        transform: translateY(70%);
-    } 
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    } 
-	}
-	@-webkit-keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    } 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    }
-	}
-  </style>
-</head>
-<body  id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar" style="height:10%;">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT US</a></li>
-        <li><a href="#partners">PARTNERS</a></li>
-        <li><a href="#mob">MODE OF BUSINESS</a></li>
-        <li><a href="#wpi">WORK PLACE AND INFRASTUCTURE</a></li>
-        <li><a href="#swc">STAFF AND WORK CULTURE</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 
-<div class="jumbotron text-center">
-  <br/><br/>
-  <h1>Medicell</h1> 
-  <p>Pharmaceutical Distributors and Pharma OTC</p> 
-  <br/><br/>
+
+
+<style type="text/css"> 
+
+.jumbotron{ 
+
+background-color:rgb(28,91,106);  
+
+color:#ffffff; 
+
+padding: 100px 25px; 
+
+
+
+} 
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.container-fluid{ 
+
+padding:60px 50px; 
+
+} 
+
+.logo { 
+
+color: rgb(28,91,106); 
+
+ height: 100%; 
+
+} 
+
+@media screen and (max-width: 768px) { 
+
+ .col-sm-4 { 
+
+ text-align: center; 
+
+ margin: 25px 0; 
+
+ } 
+
+} 
+
+.thumbnail { 
+
+ padding: 0 0 0px 0; 
+
+ border: none; 
+
+ border-radius: 0; 
+color:rgba(0,0,0,0.0);
+} 
+
+
+
+.thumbnail img { 
+
+ width: 100%; 
+
+ height: 200px; 
+
+} 
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+}
+
+.carousel-indicators li {
+    border-color: #f4511e;
+}
+
+.carousel-indicators li.active {
+    background-color: #f4511e;
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 400px;
+      height:300px;
+      margin: auto;
+  }
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
+}
+.panel { 
+
+ border: 1px solid  rgb(28,91,106); 
+
+ border-radius:0; 
+
+ transition: box-shadow 0.5s; 
+
+} 
+
+
+
+.panel:hover { 
+
+ box-shadow: 5px 0px 40px rgba(0,0,0, .2); 
+
+} 
+
+.navbar { 
+
+ margin-bottom: 0; 
+
+ background-color: rgb(28,91,106); 
+
+ z-index: 9999; 
+
+ border: 0; 
+
+ font-size: 12px !important; 
+
+ line-height: 1.42857143 !important; 
+
+ letter-spacing: 1px; 
+
+ border-radius: 0; 
+
+} 
+
+
+
+.navbar li a, .navbar .navbar-brand { 
+
+ color: #fff !important; 
+
+} 
+
+
+
+.navbar-nav li a:hover, .navbar-nav li.active a { 
+
+ color: rgb(28,91,106) !important; 
+
+ background-color: #fff !important; 
+
+} 
+
+
+
+.navbar-default .navbar-toggle { 
+
+ border-color: transparent; 
+
+ color: #fff !important; 
+
+} 
+
+.slideanim {visibility:hidden;} 
+
+.slide { 
+
+ /* The name of the animation */ 
+
+ animation-name: slide; 
+
+ -webkit-animation-name: slide; 
+
+ /* The duration of the animation */ 
+
+ animation-duration: 1s; 
+
+ -webkit-animation-duration: 1s; 
+
+ /* Make the element visible */ 
+
+ visibility: visible; 
+
+} 
+
+
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */ 
+
+@keyframes slide { 
+
+ 0% { 
+
+ opacity: 0; 
+
+ transform: translateY(70%); 
+
+ } 
+
+ 100% { 
+
+ opacity: 1; 
+
+ transform: translateY(0%); 
+
+ } 
+
+} 
+
+@-webkit-keyframes slide { 
+
+ 0% { 
+
+ opacity: 0; 
+
+ -webkit-transform: translateY(70%); 
+
+ } 
+
+ 100% { 
+
+ opacity: 1; 
+
+ -webkit-transform: translateY(0%); 
+
+ } 
+
+} 
+
+</style> 
+
+</head> 
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60"> 
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top"> 
+
+ <div class="container"> 
+
+ <div class="navbar-header"> 
+
+ <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
+
+ <span class="icon-bar"></span> 
+
+ <span class="icon-bar"></span> 
+
+ <span class="icon-bar"></span> 
+
+ </button> 
+
+ <a class="navbar-brand" href="#">Logo</a>
+
+ </div> 
+
+ <div class="collapse navbar-collapse" id="myNavbar"> 
+
+ <ul class="nav navbar-nav navbar-right"> 
+
+ <li><a href="#about">ABOUT US</a></li> 
+
+ <li><a href="#partners">PARTNERS</a></li> 
+
+ <li><a href="#mob">MODE OF BUSINESS</a></li> 
+
+ <li><a href="#wpi">WORK PLACE AND INFRASTUCTURE</a></li> 
+
+ <li><a href="#swc">STAFF AND WORK CULTURE</a></li> 
+
+ <li><a href="#contact">CONTACT</a></li> 
+
+ </ul> 
+
+ </div> 
+
+ </div> 
+
+</nav> 
+
+
+
+<div class="jumbotron text-center"> 
+
+<h1>Medicell</h1> 
+<p>Pharmaceutical Distributors and Pharma OTC</p> 
+
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/front.jpg" alt="front">
+      </div>
+      <div class="item">
+       <img src="images/elevation.jpg" alt="elevation">
+      </div>
+      
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 </div>
 
-<div id="about" class="container-fluid text-center">
- <div class="row">
+</div> 
 
-    <h2>About Us</h2>
-    <p>Medicell is pharma distribution house which provides services as C & F agents , consignee agents and   superstockists catering to the state of Madhya Pradesh . We have our additional place of business at jabalpur also   from where we offer our services as C & F agents , consignee agents and superstockists catering to eastern part of   Madhya Pradesh. Our Indore office cum warehouse is located on A.B. road with easy access.</p>
-  <p>We have our own warehouse measuring approximate 45,000 sq. ft. with excellent storage facilities and other   infrastructure. The warehouses have polished kotah floor and is equipped with three goods lift.</p>
-  <p>We have been awarded four times by M/s Lupin Ltd. as the Best C & F agents of western region. </p>
+
+<div id="about" class="container-fluid text-center" style="background-color:#d9edf2;"> 
+
+<div class="row"> 
+
+
+
+ <h2>About Us</h2> 
+
+ <p>Medicell is pharma distribution house which provides services as C & F agents , consignee agents and superstockists catering to the state of Madhya Pradesh . We have our additional place of business at jabalpur also from where we offer our services as C & F agents , consignee agents and superstockists catering to eastern part of Madhya Pradesh. Our Indore office cum warehouse is located on A.B. road with easy access.</p> 
+
+<p>We have our own warehouse measuring approximate 45,000 sq. ft. with excellent storage facilities and other infrastructure. The warehouses have polished kotah floor and is equipped with three goods lift.</p> 
+
+<p>We have been awarded four times by M/s Lupin Ltd. as the Best C & F agents of western region. </p> 
+
+
+
+</div> 
+
+</div> 
+
+
+
+
+
+<div id="partners" class="container-fluid text-center" style="background-color:#b4dce4;"> 
+
+<div class="row"><br> 
+
  
-</div>
-</div>
+
+ <h2>Partners</h2> 
+
+ <h4>M/s Medicell is a family run Business and has the following partners</h4> 
+
+ <p>Mr. Hemant N Negandhi<br> 
+
+Mr. Nandlal M Negandhi<br> 
+
+Mrs. Neela N Negandhi<br> 
+
+Mrs. Vinod N Negandhi<br> 
+
+Mr. Jay N Negandhi<br> 
+
+</p> 
 
 
-<div  id="partners" class="container-fluid text-center" style="background-color:#d2d5db;">
-<div class="row"><br>
-    
-  <h2>Partners</h2>
-  <h4>M/s Medicell is a family run Business and has the following partners</h4> 
-  <p>Mr. Hemant N Negandhi<br>
-  Mr. Nandlal M Negandhi<br>
-  Mrs. Neela N Negandhi<br>
-  Mrs. Vinod N Negandhi<br>
-  Mr. Jay N Negandhi<br>
-  </p>
 
- </div>
-</div>
+</div> 
 
-<div  id="mob" class="container-fluid text-center">
-  <h2>Mode of Business</h2>
-  <h4>We work for the following companies</h4>
-  <br>
-  
-  <div class="row">
-
-    <div class="col-sm-2">
-       <span ><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/The_Lupin_Logo.svg/841px-The_Lupin_Logo.svg.png" style="width:20%;height:100%;"></span>
-        <h4>M/s Lupin Ltd, Mumbai</h4>
-    </div>
-    <div class="col-sm-2">
-     <span ><img src="http://www.e4events.in/site/assets/files/1112/corona_remedies_pvt_ltd.png" style="width:20%;height:100%;"></span>   
-  <h4>M/s Corona Remedies Pvt. Ltd. , Ahemadabad</h4>
-     </div>
-    <div class="col-sm-2">
-      <span ><img src="http://pharmatips.doyouknow.in/images/2013.07/Executive-Sr-Executive-Quality-Assurance-Lincoln-P-120438519020900.png" style="width:20%;height:100%;"></span>  
-     <h4>M/s Lincoln Pharmaceuticals Ltd. , Ahemadabad</h4>
-     </div>
-     <div class="col-sm-2">
-       <span ><img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAdpAAAAJGQ0NzA4MjVjLTBhNjEtNGNlYy1hNDdjLWM5M2NmNDExZjA0Nw.jpg" style="width:20%;height:100%;"></span>  
-     <h4>M/s Vasu Healthcare Pvt. Ltd. , Vadodara</h4>
-     </div>
-    <div class="col-sm-2">
-       <span ><img src="http://www.indiasite.com/admin/uploads/EquityCompany_Logo/634913342635956934_22.JPG" style="width:20%;height:100%;"></span>  
-      <h4>M/s Gujarat Terce Laboratories Pvt. Ltd., Ahemadabad</h4>
-     </div>
- </div>
-
-    <br><br>
-
-  <div class="row">
-
-    <div class="col-sm-2">
-    <span ><img src="http://www.cboinfotech.com/images/c_logo/Precia.png" style="width:20%;height:100%;"></span>
-      <h4>M/s Precia Pharma Pvt. Ltd. , Mumbai</h4>
-    </div>
-    <div class="col-sm-2">
-     <span ><img src="http://pharmapathway.com/wp-content/uploads/2017/02/Aculife-Healthcare-Pvt.-Ltd.jpg" style="width:20%;height:100%;"></span>
-     <h4>M/s Acculife Healthcare Pvt. Ltd. , Mumbai</h4>
-     </div>
-    <div class="col-sm-2">
-     <span ><img src="http://www.antya.com/upload/10/SHREE-Logo.jpg" style="width:20%;height:100%;"></span>
-     <h4>M/s Shree Dhoothpapeshwar Pvt. Ltd. , Mumbai</h4>
-     </div>
-     <div class="col-sm-2">
-     <span ><img src="http://www.speedprint2020.com/images/clients/linux_laboratories.jpg" style="width:20%;height:100%;"></span>
-     <h4>M/s Linux Laboratories Pvt. Ltd. , Chennai</h4>
-     </div>
-    <div class="col-sm-2">
-     <span ><img src="http://www.moneycontrol.com/news_image_files/Venus_Remedies_190.jpg" style="width:20%;height:100%;"></span>
-     <h4>M/s Venus Remedies Ltd. , Panchkula</h4>
-     </div>
- </div>
-
-<p>All orders recieved upto 3 pm are processed , packed and handed over to the transport on the same day. The maximum time for delivery around indore is one to two days and three to four days in other parts of Madhya Pradesh.</p>
-
-</div>
+</div> 
 
 
-<div id="wpi" class="container-fluid text-center" style="background-color:#d2d5db;">
-  <h2>Work Place and Infrastructure</h2>
-  <h4>Our offices have very good ambience and business enviornment. <br>We have provided the following : </h4>
+
+<div id="mob" class="container-fluid text-center" style="background-color:#d9edf2;"> 
+
+ <h2>Mode of Business</h2> 
+
+ <h4>We work for the following companies</h4> 
+
+ <br> 
+
  
-			Three meeting rooms for conducting small meetings<br>
-			Four nos. walk in cold rooms (2 to 8 deg)<br>
-			Round the clock generator back-up</li>
-			Seperate parking lots for two wheelers and four wheelers<br>
-			All weather unloading areas<br>
 
-		
-  <div class="row text-center">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="images/godown.jpg" alt="Godown1" style="width:33%;height:100%;">
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="images/godown1.jpg" alt="Godown2" style="width:33%;height:100%;">
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="images/godown2.jpg" alt="Godown3" style="width:33%;height:100%;">
-      </div>
-    </div>
- </div>
-</div>
+<div class="row"> 
 
 
-<div id="swc" class="container-fluid text-center">
 
-  <div class="text-center">
-    <h2>STAFF AND WORK CULTURE</h2>
-    <h4>We have a strength of 55 persons which includes an efficient team of managers , commercial executives , accounts officers , warehouse incharges , packers , loaders and drivers.We inculcate the values of Medicell family and hold an annual picnic with spouse and children of the whole team.</h4>
-  </div>
+ <div class="col-sm-2 col-sm-offset-1"> 
 
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="panel panel-default text-center">
-        <img src="images/office.jpg" style="width:33%;height:100%;"> 
-      </div> 
-    </div> 
-    <div class="col-sm-4">
-      <div class="panel panel-default text-center">
-        <img src="images/office1.jpg" style="width:33%;height:100%;">
-      </div> 
-    </div> 
-   <div class="col-sm-4">
-      <div class="panel panel-default text-center">
-       <img src="images/office2.jpg" style="width:33%;height:100%;">
-      </div> 
-    </div> 
-  </div>
-</div>
+ <span ><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/The_Lupin_Logo.svg/841px-The_Lupin_Logo.svg.png" style="width:50%;height:100%;"></span> 
 
+<h4>M/s Lupin Ltd, Mumbai</h4> 
 
-<div  id="contact" class="container-fluid text-center"  style="background-color:#d2d5db;">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-      <p>Contact us at</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Medicell , "Shree Niwas" , survey no. 4/1/1 , Lasudia Mori , Dewas Naka , Indore (M.P) , 452010</p>
-      <p><span class="glyphicon glyphicon-phone"></span> 0731-4033624 , 4033625 , 4043950 , 9826122861 </p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Feel free to drop us a line at <a href="mailto:medicellindore1@gmail.com">medicellindore1@gmail.com</a></p> 
-  </div>
-</div>
+ </div> 
 
+ <div class="col-sm-2"> 
 
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+<span ><img src="http://www.e4events.in/site/assets/files/1112/corona_remedies_pvt_ltd.png" style="width:50%;height:100%;"></span>
 
-   // Make sure this.hash has a value before overriding default behavior
-  if (this.hash !== "") {
+ <h4>M/s Corona Remedies Pvt. Ltd. , Ahemadabad</h4> 
 
-    // Prevent default anchor click behavior
-    event.preventDefault();
+ </div> 
 
-    // Store hash
-    var hash = this.hash;
+ <div class="col-sm-2"> 
 
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
+ <span ><img src="http://pharmatips.doyouknow.in/images/2013.07/Executive-Sr-Executive-Quality-Assurance-Lincoln-P-120438519020900.png" style="width:50%;height:100%;"></span>
 
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-      });
-    } // End if
-  });
+<h4>M/s Lincoln Pharmaceuticals Ltd. , Ahemadabad</h4> 
+
+ </div> 
+
+ <div class="col-sm-2"> 
+
+<span ><img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAdpAAAAJGQ0NzA4MjVjLTBhNjEtNGNlYy1hNDdjLWM5M2NmNDExZjA0Nw.jpg" style="width:50%;height:100%;"></span>
+
+ <h4>M/s Vasu Healthcare Pvt. Ltd. , Vadodara</h4> 
+
+ </div> 
+
+ <div class="col-sm-2"> 
+
+ <span ><img src="http://www.indiasite.com/admin/uploads/EquityCompany_Logo/634913342635956934_22.JPG" style="width:50%;height:100%;"></span>
+
+<h4>M/s Gujarat Terce Laboratories Pvt. Ltd., Ahemadabad</h4> 
+
+ </div> 
+
+</div> 
 
 
-$(window).scroll(function() {
-  $(".slideanim").each(function(){
-    var pos = $(this).offset().top;
 
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + 600) {
-      $(this).addClass("slide");
-    }
-  });
-});
-})
-</script>
+ <br><br> 
 
-</body>
+
+
+ <div class="row"> 
+
+
+
+ <div class="col-sm-2 col-md-offset-1"> 
+
+<span ><img src="http://www.cboinfotech.com/images/c_logo/Precia.png" style="width:50%;height:100%;"></span> 
+
+<h4>M/s Precia Pharma Pvt. Ltd. , Mumbai</h4> 
+
+ </div> 
+
+ <div class="col-sm-2"> 
+
+<span ><img src="http://pharmapathway.com/wp-content/uploads/2017/02/Aculife-Healthcare-Pvt.-Ltd.jpg" style="width:50%;height:100%;"></span> 
+
+<h4>M/s Acculife Healthcare Pvt. Ltd. , Mumbai</h4> 
+
+</div> 
+
+<div class="col-sm-2"> 
+
+<span ><img src="http://www.antya.com/upload/10/SHREE-Logo.jpg" style="width:50%;height:100%;"></span> 
+
+<h4>M/s Shree Dhoothpapeshwar Pvt. Ltd. , Mumbai</h4> 
+
+</div> 
+
+ <div class="col-sm-2"> 
+
+<span ><img src="http://www.speedprint2020.com/images/clients/linux_laboratories.jpg" style="width:50%;height:100%;"></span> 
+
+ <h4>M/s Linux Laboratories Pvt. Ltd. , Chennai</h4> 
+
+ </div> 
+
+ <div class="col-sm-2"> 
+
+<span ><img src="http://www.moneycontrol.com/news_image_files/Venus_Remedies_190.jpg" style="width:50%;height:100%;"></span> 
+
+ <h4>M/s Venus Remedies Ltd. , Panchkula</h4> 
+
+ </div> 
+
+</div> 
+
+
+
+<p>All orders recieved upto 3 pm are processed , packed and handed over to the transport on the same day. The maximum time for delivery around indore is one to two days and three to four days in other parts of Madhya Pradesh.</p> 
+
+
+
+</div> 
+
+
+
+
+
+<div id="wpi" class="container-fluid text-center" style="background-color:#b4dce4;"> 
+
+ <h2>Work Place and Infrastructure</h2> 
+
+ <h4>Our offices have very good ambience and business enviornment. <br>We have provided the following : </h4> 
+
+
+
+Three meeting rooms for conducting small meetings<br> 
+
+Four nos. walk in cold rooms (2 to 8 deg)<br> 
+
+Round the clock generator back-up</li> 
+
+Seperate parking lots for two wheelers and four wheelers<br> 
+
+All weather unloading areas<br> 
+
+
+
+
+
+<div class="row text-center"> 
+
+ <div class="col-sm-2 col-md-offset-2" > 
+
+ <div class="thumbnail"> 
+
+ <img src="images/godown.jpg" alt="Godown1"> 
+
+ </div> 
+
+ </div> 
+
+ <div class="col-sm-2 col-md-offset-1"> 
+
+ <div class="thumbnail"> 
+
+ <img src="images/godown1.jpg" alt="Godown2" > 
+
+ </div> 
+
+ </div> 
+
+ <div class="col-sm-2 col-md-offset-1"> 
+
+ <div class="thumbnail"> 
+
+ <img src="images/godown2.jpg" alt="Godown3" > 
+
+ </div> 
+
+ </div> 
+
+</div> 
+
+</div> 
+
+
+
+
+
+<div id="swc" class="container-fluid text-center" style="background-color:#d9edf2;"> 
+
+
+
+ <div class="text-center"> 
+
+ <h2>STAFF AND WORK CULTURE</h2> 
+
+ <h4>We have a strength of 55 persons which includes an efficient team of managers , commercial executives , accounts officers , warehouse incharges , packers , loaders and drivers.We inculcate the values of Medicell family and hold an annual picnic with spouse and children of the whole team.</h4> 
+
+ </div> 
+
+
+
+ <div class="row"> 
+
+ <div class="col-sm-2 col-md-offset-2"> 
+
+ <div class="panel panel-default text-center"> 
+
+ <img src="images/office.jpg" style="width:100%;height:100%;"> 
+
+ </div> 
+
+ </div> 
+
+ <div class="col-sm-2 col-md-offset-1"> 
+
+ <div class="panel panel-default text-center"> 
+
+ <img src="images/office1.jpg" style="width:100%;height:100%;"> 
+
+ </div> 
+
+ </div> 
+
+ <div class="col-sm-2 col-md-offset-1"> 
+
+ <div class="panel panel-default text-center"> 
+
+<img src="images/office2.jpg" style="width:100%;height:100%;"> 
+
+ </div> 
+
+ </div> 
+
+ </div> 
+
+</div> 
+
+
+
+
+
+<div id="contact" class="container-fluid text-center" style="background-color:#b4dce4;"> 
+
+ <h2 class="text-center">CONTACT</h2> 
+
+ <div class="row"> 
+
+ <p>Contact us at</p> 
+
+ <p><span class="glyphicon glyphicon-map-marker"></span>Medicell , "Shree Niwas" , survey no. 4/1/1 , Lasudia Mori , Dewas Naka , Indore (M.P) , 452010</p> 
+
+ <p><span class="glyphicon glyphicon-phone"></span> 0731-4033624 , 4033625 , 4043950 , 9826122861 </p> 
+
+ <p><span class="glyphicon glyphicon-envelope"></span>Feel free to drop us a line at <a href="mailto:medicellindore1@gmail.com">medicellindore1@gmail.com</a></p> 
+
+ </div> 
+
+</div> 
+
+
+
+
+
+<script> 
+
+$(document).ready(function(){ 
+
+// Add smooth scrolling to all links in navbar + footer link 
+
+ $(".navbar a, footer a[href='#myPage']").on('click', function(event) { 
+
+
+
+ // Make sure this.hash has a value before overriding default behavior 
+
+if (this.hash !== "") { 
+
+
+
+ // Prevent default anchor click behavior 
+
+ event.preventDefault(); 
+
+
+
+ // Store hash 
+
+ var hash = this.hash; 
+
+
+
+ // Using jQuery's animate() method to add smooth page scroll 
+
+ // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area 
+ $('html, body').animate({ 
+
+ scrollTop: $(hash).offset().top 
+
+ }, 900, function(){ 
+
+
+
+ // Add hash (#) to URL when done scrolling (default click behavior) 
+
+ window.location.hash = hash; 
+
+ }); 
+
+ } // End if 
+
+ }); 
+
+
+
+
+
+$(window).scroll(function() { 
+
+ $(".slideanim").each(function(){ 
+
+ var pos = $(this).offset().top; 
+
+
+
+ var winTop = $(window).scrollTop(); 
+
+ if (pos < winTop + 600) { 
+
+ $(this).addClass("slide"); 
+
+ } 
+
+ }); 
+
+}); 
+
+}) 
+
+</script> 
+
+
+
+</body> 
+
 </html>

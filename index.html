@@ -53,6 +53,35 @@ body, html {
         background-attachment: scroll;
     }
 }
+
+s.slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
 </style>
 <body>
 
@@ -86,9 +115,9 @@ body, html {
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
+<div class="w3-content w3-container w3-padding-64 slideanim" id="about">
   <h3 class="w3-center">ABOUT US</h3>
-  <p class="w3-center animate">
+  <p class="w3-center">
 <p>Medicell is pharma distribution house which provides services as C & F agents , consignee agents and superstockists catering to the state of Madhya Pradesh . We have our additional place of business at jabalpur also from where we offer our services as C & F agents , consignee agents and superstockists catering to eastern part of Madhya Pradesh. Our Indore office cum warehouse is located on A.B. road with easy access.</p> 
 
 <p>We have our own warehouse measuring approximate 45,000 sq. ft. with excellent storage facilities and other infrastructure. The warehouses have polished kotah floor and is equipped with three goods lift.</p> 
@@ -162,9 +191,9 @@ Mr. Jay N Negandhi<br>
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="mob">
+<div class="w3-content w3-container w3-padding-64 slideanim" id="mob">
   <h3 class="w3-center">Our major companies</h3>
-  <p class="w3-center"><em>We work for the following companies.<br></em></p><br>
+  <p class="w3-center "><em>We work for the following companies.<br></em></p><br>
    <div class="row"> 
 
 
@@ -282,7 +311,7 @@ Mr. Jay N Negandhi<br>
   <h3 class="w3-center">WHERE WE WORK</h3>
   <p class="w3-center"><em> </em></p>
 
-  <div class="w3-row w3-padding-32 w3-section w3-center">
+  <div class="w3-row w3-padding-32 w3-section w3-center slideanim">
     
        <div class="w3-large w3-margin-bottom">
         <p>Swing by for a cup of <i class="fa fa-coffee"></i> at </p><br>
@@ -340,14 +369,11 @@ function toggleFunction() {
     }
 }
 
-
-<!-- ----------------------------------- -->
+</script>
+<script>
 $(document).ready(function(){
-  // Add scrollspy to <body>
-  $('body').scrollspy({target: ".navbar", offset: 50});   
-
-  // Add smooth scrolling on all links inside the navbar
-  $("#myNavbar a").on('click', function(event) {
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -357,20 +383,29 @@ $(document).ready(function(){
       var hash = this.hash;
 
       // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 900, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    }  // End if
+    } // End if
   });
-});
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
 
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
 </script>
-
 
 </body>
 </html>

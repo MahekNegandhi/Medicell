@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
@@ -88,29 +88,31 @@ s.slideanim {visibility:hidden;}
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-opennav w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-opennav w3-right  " href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#mob" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> MODE OF BUSINESS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-  
+    <a href="#home" class="w3-bar-item w3-button  w3-card-2 w3-animate-top w3-white">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small   "><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#mob" class="w3-bar-item w3-button w3-hide-small  "><i class="fa fa-th"></i> MODE OF BUSINESS</a>
+    <a href="#mj" class="w3-bar-item w3-button w3-hide-small " ><i class="fa fa-laptop"></i> MEDICELL JABALPUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small " ><i class="fa fa-envelope"></i> CONTACT</a>
+
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-navblock w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about">ABOUT</a>
-    <a href="#mob">MODE OF BUSINESS</a>
-    <a href="#contact">CONTACT</a>
-   
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#mob" class="w3-bar-item w3-button">MODE OF BUSINESS</a>
+    <a href="#mj" class="w3-bar-item w3-button">MEDICELL JABALPUR</a>   
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+    
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min w3-center" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity "><big>MEDICELL</big><span class="w3-hide-small"><br> <small>We care for your medicines</small><br><br>Pharmaceutical Distributors and Pharma OTC</span></span>
+<div class="bgimg-1 w3-display-container w3-opacity-min w3-center" style="color:white; font-weight:bold;" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;  text-shadow: 2px 2px 1px grey;">
+    <span class="w3-center w3-padding-xlarge w3-xlarge w3-wide w3-animate-opacity "><big><h1><p style="font-family:Courier New; font-weight:bold; text-shadow: 4px 4px 4px white;">MEDICELL</h1></big></p><span class="w3-hide-small"><br> <small>We care for your medicines</small><br><br>Pharmaceutical Distributors and Pharma OTC</span></span>
   </div>
 </div>
 
@@ -149,19 +151,15 @@ Mr. Jay N Negandhi<br>
     </div>
   </div>
   <p class="w3-xxlarge w3-center w3-padding-16">We are really good at:</p>
-  <p class="w3-medium"><i class="fa fa-truck"></i>Efficient and quick delivery of goods</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
-  </div>
-  <p class="w3-medium"><i class="fa fa-laptop"></i>Providing facilities and infrastructure like meeting rooms ,  walk in cold rooms (2 to 8 deg) , Round the clock generator back-up and all weather unloading areas</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-medium"><i class="fa fa-line-chart"></i>Providing good ambience and business enviornment</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-  </div>
-<p class="w3-large w3-center w3-padding-16">We have a strength of 55 persons which includes an efficient team of managers , commercial executives , accounts officers , warehouse incharges , packers , loaders and drivers.We inculcate the values of Medicell family and hold an annual picnic with spouse and children of the whole team.</p>
+  <ul>
+
+<li><p class="w3-medium"><i class="fa fa-truck"></i>Efficient and quick delivery of goods</p></li>
+
+<li>  <p class="w3-medium"><i class="fa fa-laptop"></i>Providing facilities and infrastructure like meeting rooms ,  walk in cold rooms (2 to 8 deg) , Round the clock generator back-up and all weather unloading areas</p></li>
+
+<li>  <p class="w3-medium"><i class="fa fa-line-chart"></i>Providing good ambience and business enviornment</p></li>
+<li>  <p class="w3-medium"><i class="fa fa-users"></i>We have a strength of 55 persons which includes an efficient team of managers , commercial executives , accounts officers , warehouse incharges , packers , loaders and drivers.We inculcate the values of Medicell family and hold an annual picnic with spouse and children of the whole team.</p></li>
+
 </div>
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
@@ -294,12 +292,22 @@ Mr. Jay N Negandhi<br>
 </div>
 
 
-
+<!-- third Parallax Image with Logo Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">MEDICELL JABALPUR</span>
+  </div>
+</div>
  
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="mj">
+  <h3 class="w3-center">MEDICELL JABALPUR</h3>
+  <div class="slideanim w3-center">
+  <p> content about medicell jabalpur companies, area etc</p>
+  </div>
+</div>
 
-
-
-<!-- Third Parallax Image with Portfolio Text -->
+<!-- Forth Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>
@@ -314,12 +322,12 @@ Mr. Jay N Negandhi<br>
   <div class="w3-row w3-padding-32 w3-section w3-center slideanim">
     
        <div class="w3-large w3-margin-bottom">
-        <p>Swing by for a cup of <i class="fa fa-coffee"></i> at </p><br>
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Medicell , "Shree Niwas" , survey no. 4/1/1 , Lasudia Mori , Dewas Naka , Indore (M.P) , 452010<br><br>
-         <p>Or just ring us up  <i class="fa fa-phone"></i> at </p><br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone:  0731-4033624 , 4033625 , 4043950 , 9826122861<br><br>
-        <p>And feel free to drop us a line   <i class="fa fa-envelope"></i> at </p><br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        <p>Swing by for a cup of tea at </p>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Medicell , "Shree Niwas" , survey no. 4/1/1 , Lasudia Mori , Dewas Naka , Indore (M.P) , 452010
+         <p>Or just ring us up at </p>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone:  0731-4033624 , 4033625 , 4043950 , 9826122861
+        <p>And feel free to drop us a line at </p>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a href="mailto:medicellindore1@gmail.com"> Email: medicellindore1@gmail.com</a><br>
 
     
     </div>
@@ -327,11 +335,13 @@ Mr. Jay N Negandhi<br>
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-btn w3-padding w3-light-grey w3-hover-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off w3-hover-text-white"> 
+<a href="#home" title="To Top"><i class="fa fa-angle-double-up w3-xlarge w3-center "></i>
+    <p>To the Top</p>
+</a>   
+
  <h6>Developer - Mahek Negandhi - Catch her on </h6>
 <div class="w3-xlarge w3-section">
-   <a href="https://www.facebook.com/mahek.negandhi"><i class="fa fa-facebook-official w3-hover-text-red"></i></a>
    <a href="mailto:negandhi.mahek@gmail.com"><i class="fa fa-envelope w3-hover-text-purple"></i></a>
    <a href="https://github.com/maheknegandhi"><i class="fa fa-github w3-hover-text-pink"></i></a>
    <a href="https://plus.google.com/107122554510030332137/posts"><i class="fa fa-google-plus w3-hover-text-yellow"></i></a>
@@ -369,8 +379,7 @@ function toggleFunction() {
     }
 }
 
-</script>
-<script>
+
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {

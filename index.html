@@ -19,7 +19,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4,.bgimg-5 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -34,16 +34,23 @@ body, html {
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("http://www.shximai.com/data/out/125/67184696-medicine-wallpapers.jpg");
+    background-image: url("http://media.gettyimages.com/videos/cod-liver-oil-video-id486019547?s=640x640");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("http://www.shximai.com/data/out/125/67184696-medicine-wallpapers.jpg");
+    background-image: url("https://cdn.shutterstock.com/shutterstock/videos/12775796/thumb/1.jpg?i10c=img.resize(height:160)");
     min-height: 400px;
 }
-
+.bgimg-4 {
+    background-image: url("redbground.png");
+    min-height: 400px;
+}
+.bgimg-5 {
+    background-image: url("https://15lqly1asnyxgrm42brusqb1-wpengine.netdna-ssl.com/wp-content/uploads/2015/06/ThinkstockPhotos-472499746.jpg");
+    min-height: 400px;
+}
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
@@ -352,7 +359,7 @@ Mr. Jay N Negandhi<br>
 
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min" >
+<div class="bgimg-4 w3-display-container w3-opacity-min" >
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-light-grey w3-wide">Mode of Business - Jabalpur</span>
   </div>
@@ -447,7 +454,7 @@ Mr. Jay N Negandhi<br>
 
 
 <!-- Forth Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="bgimg-5 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>
   </div>
@@ -525,8 +532,8 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-
-
+</script>
+<script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
